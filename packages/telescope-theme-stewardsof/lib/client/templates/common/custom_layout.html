@@ -1,0 +1,22 @@
+<template name="custom_layout">
+  {{> css}}
+  {{> custom_submit_button}}
+
+
+
+  <div class="outer-wrapper {{currentPage}} {{navLayout}}">
+    <div class="inner-wrapper template-{{pageName}}">
+      {{> nav}}
+      <div class="content-wrapper container">
+        {{> messages}}
+        {{> modules "hero"}}
+        {{> yield "adminMenu"}}
+        {{> yield "postsListTop"}}
+        {{> yield}}
+        {{> footer}}
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    {{{extraCode}}}
+  </div>
+</template>

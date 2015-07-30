@@ -1,0 +1,40 @@
+<template name="custom_user_invites">
+  <div class="grid-small grid-block dialog admin">
+    {{#if canCurrentUserInvite}}
+      {{#autoForm schema=invitesSchema id="inviteForm" class="form-block" type="method" meteormethod="inviteUser"}}
+          <div class="row">
+            <div class="input-field col s12">
+              {{> afFieldInput name="invitedUserEmail"}}
+              <label>Email</label>
+            </div>
+          </div>
+        <div class="form-actions">
+          {{#if afFieldIsInvalid name="invitedUserEmail"}}
+            This is not a valid email
+          {{/if}}
+          <input type="submit" class="button btn btn-primary" value="Invite" />
+        </div>
+      {{/autoForm}}
+    {{/if}}
+
+    {{!--
+    <table>
+      <thead>
+        <tr>
+          <td>Email</td>
+          <td>Accepted</td>
+        </tr>
+      </thead>
+      <tbody>
+          {{#each invites}}
+          <tr>
+            <td>{{invitedUserEmail}}</td>
+            <td>{{#if accepted}}{{{icon "voted"}}}{{/if}}</td>
+          </tr>
+          {{/each}}
+      </tbody>
+    </table>
+    --}}
+
+  </div>
+</template>

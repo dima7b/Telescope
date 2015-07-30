@@ -1,0 +1,213 @@
+@import "components/nav.scss";
+@import "components/posts.scss";
+@import "components/users.scss";
+@import "components/admin.scss";
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: #212121; }
+
+.custom-hero-banner{
+  text-align: center;
+  color: purple;
+}
+
+.container { max-width: 846px; }
+
+.content-wrapper {
+  margin-top: 50px;
+}
+
+#submit {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: block !important;
+  z-index: 997;
+}
+
+.newsletter-banner {
+  margin: 15px 0px 50px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #0097A7;
+  background-color: #F0FDFF;
+  box-shadow: 0 2px 7px -3px #000;
+
+  .newsletter-tagline {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .newsletter-email {
+    border-width: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #0097A7;
+    background-color: transparent;
+  }
+
+  .newsletter-dismiss { display: none; }
+}
+
+#submitPostForm {
+  .af-fieldGroup { display: none; }
+}
+
+.af-defaultFieldGroup,
+.af-fieldGroup {
+  border-width: 0px;
+}
+
+// .af-fieldgroup-heading {
+//   padding: 20px;
+// }
+
+label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  &:before {
+    // content: '';
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 18px;
+    // height: 18px;
+    // z-index: 0;
+    // border: 2px solid #5a5a5a;
+    // border-radius: 1px;
+    // margin-top: 2px;
+    // -webkit-transition: 0.2s;
+    // -moz-transition: 0.2s;
+    // -o-transition: 0.2s;
+    // -ms-transition: 0.2s;
+    // transition: 0.2s;
+  }
+}
+
+label {
+  padding-left: 0px;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  position: relative;
+  left: 0px;
+  visibility: visible;
+}
+
+// ::-webkit-input-placeholder {
+//    color: red;
+// }
+
+// :-moz-placeholder { /* Firefox 18- */
+//    color: red;
+// }
+
+// ::-moz-placeholder {  /* Firefox 19+ */
+//    color: red;
+// }
+
+// :-ms-input-placeholder {
+//    color: red;
+// }
+
+#btn-submit {
+  &:hover {
+    .zmdi-plus { display: none; }
+  }
+}
+
+.modal {
+  max-width: 360px;
+  background-color: transparent;
+
+  &#modal-submit,
+  &#modal-invite {
+    // min-height: 420px;
+
+    @media(min-width: 601px) {
+      right: 80px;
+      bottom: 100px;
+      position: absolute !important;
+      top: inherit !important;
+      left: inherit !important;
+    }
+  }
+
+  .modal-header {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #e91e63;
+
+    a { color: #FFF; }
+    .zmdi-close { margin: 0.72rem 0.42rem; }
+  }
+
+  &#modal-invite {
+    .modal-header {
+      background-color: #ffc107;
+    }
+  }
+
+  .modal-content {
+    padding: 0px;
+  }
+
+  #post-thanks,
+  #invite-thanks {
+    display: none;
+
+    &.shown {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      // padding: 25px;
+      display: block;
+      color: #FFF;
+      background-color: #e91e63;
+
+      .modal-content {
+        padding-right: 25px;
+        padding-left: 25px;
+
+        p {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+      }
+
+      .modal-footer {
+        position: absolute;
+        bottom: 0px;
+
+        a {
+          color: #FFF;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #invite-thanks {
+    &.shown { background-color: #ffc107; }
+  }
+}
+
+.lean-overlay {}

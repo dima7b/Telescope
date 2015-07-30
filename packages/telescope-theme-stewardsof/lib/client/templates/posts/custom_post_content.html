@@ -1,0 +1,14 @@
+<template name="custom_post_content">
+    {{> modules "postThumbnail"}}
+    <div class="post-info">
+      <h5 class="post-heading">
+        {{> modules "postHeading"}}
+      </h5>
+      <h6 class="post-snippet">
+        {{ customPostField }}
+      </h6>
+      <div class="post-meta">
+        {{> modules "postMeta"}}
+      </div>
+    </div>
+</template>

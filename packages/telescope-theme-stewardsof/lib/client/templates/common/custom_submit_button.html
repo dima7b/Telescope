@@ -1,0 +1,91 @@
+<template name="custom_submit_button">
+
+  {{#if canPost}}
+  <div id="btn-submit" class="fixed-action-btn hide-on-small-only" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large pink modal-trigger" data-target="modal-submit">
+      <i class="zmdi zmdi-plus"></i>
+      <i class="zmdi zmdi-edit"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating orange modal-trigger" data-target="modal-invite"><i class="zmdi zmdi-ticket-star"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="fixed-action-btn hide-on-large-only" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large pink">
+      <i class="zmdi zmdi-plus"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating orange modal-trigger" data-target="modal-invite"><i class="zmdi zmdi-ticket-star"></i></a></li>
+    </ul>
+  </div>
+
+  {{/if}}
+
+  <!-- <button id="submit" class="btn-floating btn-large waves-effect waves-light pink btn-large modal-trigger" data-target="modal-submit"><i class="zmdi zmdi-plus"></i></button> -->
+
+  <div id="modal-submit" class="modal z-depth-3">
+    <div class="modal-header">
+      <h5 class="left">Post Changemaker</h5>
+      <span class="right">
+        <a href="#!" class="modal-action modal-close"><i class="zmdi zmdi-close zmdi-hc-2x"></i></a>
+      </span>
+    </div>
+    <div class="modal-content">
+      <div id="submitCard" class="card-panel white">
+       {{> post_submit}}
+      </div>
+    </div>
+
+    <div id="post-thanks">
+      <div class="modal-header">
+        <h5 class="left">Thanks for posting!</h5>
+        <span class="right">
+          <a href="#!" class="modal-action modal-close"><i class="zmdi zmdi-close zmdi-hc-2x"></i></a>
+        </span>
+      </div>
+      <div class="modal-content">
+        <p>New organizations are posted often and to ensure organizations submitted are real we curate them.</p>
+        <p>We’ll let you know when the organization you posted goes live!</p>
+      </div>
+      <div class="modal-footer pink">
+        <a href="#!" class="modal-action modal-close waves-effect waves-pink btn-flat right">Close</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="modal-invite" class="modal z-depth-3">
+    <div class="modal-header">
+      <h5 class="left">Invite a Steward</h5>
+      <span class="right">
+        <a href="#!" class="modal-action modal-close"><i class="zmdi zmdi-close zmdi-hc-2x"></i></a>
+      </span>
+    </div>
+    <div class="modal-content">
+      <div id="inviteCard" class="card-panel white">
+       {{> user_invites}}
+      </div>
+    </div>
+
+    <div id="invite-thanks">
+      <div class="modal-header">
+        <h5 class="left" style="max-width: 250px;">Thanks for helping us grow!</h5>
+        <span class="right">
+          <a href="#!" class="modal-action modal-close"><i class="zmdi zmdi-close zmdi-hc-2x"></i></a>
+        </span>
+      </div>
+      <div class="modal-content">
+        <p>Sharing this with new faces helps us spread awareness around the world of changemakers and their work.</p>
+        <p>With more awareness we can change the game of business toward one of that focuses on regenerative human &amp; earth practices.</p>
+      </div>
+      <div class="modal-footer amber">
+        <a href="#!" class="modal-action modal-close waves-effect waves-amber btn-flat right">Close</a>
+      </div>
+    </div>
+
+  </div>
+
+</template>
+
+<!-- /submit -->

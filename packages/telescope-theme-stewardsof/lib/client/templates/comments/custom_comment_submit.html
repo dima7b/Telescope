@@ -1,0 +1,23 @@
+<template name="custom_comment_submit">
+  {{#if canComment}}
+    <div class="comment-form comment-new module">
+      <div class="participants">
+        <h6 class="points {{#if upvoted}}voted{{/if}} text-center">{{baseScore}} Thumbs Up</h6>
+        {{#if commenters}}
+        <div class="post-commenters">
+        {{#each commenters}}
+          <a href="{{getProfileUrl this}}" class="avatar-link avatar-small commenter-avatar">
+            {{> avatar userId=this shape="circle"}}
+          </a>
+        {{/each}}
+        </div>
+        {{/if}}
+      </div>
+      <!-- <h4 class="comment-new-heading">{{_ "add_comment"}}</h4> -->
+      {{> quickForm collection="Comments" id="submitCommentForm" input-col-class="controls" type="method" meteormethod="submitComment" fields=commentFields parentContext=this}}
+      <span class="action-count">{{commentCount}} Comments</span>
+    </div>
+  {{else}}
+    <p class="cannot-comment-message">{{reason}}</p>
+  {{/if}}
+</template>

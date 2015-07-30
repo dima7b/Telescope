@@ -1,0 +1,40 @@
+.admin-wrapper {
+  .admin-menu {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #b7b7b7;
+    list-style-type: none;
+  }
+  .menu-top-level {display: none; }
+  .menu-contents {
+    .menu-item {
+      padding: 18px 10px;
+      display: inline-block;
+    }
+  }
+
+  #updateSettingsForm .af-fieldGroup,
+  .admin-menu,
+  .form-well,
+  .form-module {
+    margin-bottom: 35px;
+    padding: 15px 30px;
+    box-shadow: 0 2px 7px -3px #000;
+    background-color: #FFF;
+  }
+
+}
+
+.af-defaultFieldGroup {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.users-dashboard-heading,
+.form-well h3,
+.af-fieldgroup-heading {
+  padding-left: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.users-dashboard-heading { display: inline-block; }

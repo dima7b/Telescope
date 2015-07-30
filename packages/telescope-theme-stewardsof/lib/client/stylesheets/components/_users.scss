@@ -1,0 +1,111 @@
+.user-profile {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  // padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0 2px 7px -3px #000;
+
+  .user-profile-avatar {
+    padding: 20px;
+    .avatar {
+      width: 135px;
+      height: 135px;
+    }
+  }
+
+  .edit-profile-button {
+    margin-top: 10px;
+    color: #0097a7;
+    font-weight: bold;
+  }
+
+  .user-info {
+    padding-top: 20px;
+    color: #727272;
+    font-size: 24px;
+    font-weight: bold;
+
+    span {
+      margin-bottom: 15px;
+      padding-right: 15px;
+      display: inline-block;
+
+      &:first-child {
+        display: block;
+        color: #000;
+      }
+
+      a { color: #727272; }
+    }
+  }
+
+  .tabs {
+    .tab {
+      a {
+        color: #0097a7;
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .indicator {
+      height: 3px;
+      background-color: #0097a7;
+    }
+  }
+}
+
+.tab-module {
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0 2px 7px -3px #000;
+}
+
+.template-fullPageAtForm {
+  .at-form {
+    padding: 40px;
+    background-color: #FFF;
+    box-shadow: 0 2px 7px -3px #000;
+
+    .at-title {
+      text-align: center;
+    }
+
+    h3 { margin-top: 0px; }
+  }
+}
+
+.at-oauth {
+  .at-social-btn {
+    margin: 0 auto 20px auto;
+    padding: 20px 30px;
+    border-width: 0px;
+    border-radius: 30px;
+    display: block;
+  }
+}
+
+.at-sep,
+.at-signup-link,
+.at-signin-link {
+  text-align: center;
+}
+
+// .at-pwd-form { display: none; }
+
+.template-sign_out {
+  .user-edit {
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 2px 7px -3px #000;
+
+    #completeUserForm {
+      fieldset {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-width: 0px;
+      }
+    }
+  }
+}

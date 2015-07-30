@@ -1,0 +1,61 @@
+<template name="custom_comment_item">
+  <li class="comment module comment-displayed {{commentClass}}" id="{{_id}}">
+   <div class="comment-body">
+      {{#if isDeleted}}
+        <div class="comment-deleted">This comment has been deleted.</div>
+      {{else}}
+      <div class="comment-content">
+        <div class="row">
+
+          <div class="col s2 m1">
+            <div class="comment-meta">
+              <div class="user-avatar avatar-medium" aria-hidden="true" aria-live="off">{{> avatar userId=userId shape="circle"}}</div>
+            </div>
+          </div>
+
+          <div class="col s10 m11">
+            <div class="comment-main">
+              <a class="comment-username" href="{{getProfileUrl userId}}">{{authorName}} {{customUserField}}</a>
+              <div class="comment-text markdown">{{{htmlBody}}}</div>
+             <!--  <a href="{{pathFor route='comment_page' _id=_id}}" class="comment-permalink comment-time">{{timeAgo ago}},</a>
+              <span class="points">{{upvotes}}</span> <span class="unit">{{pointsUnitDisplayText}}  </span>
+              {{#if canEdit this}}
+                | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
+              {{/if}}
+              {{#if isAdmin}}
+                | <span>{{full_date}}</span>
+              {{/if}} -->
+            </div>
+
+            <div class="comment-actions comment-vote {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
+              <div class="left">
+                <a class="upvote" href="#">
+                  <span>Give</span>
+                  <i class="zmdi zmdi-thumb-up"></i>
+                </a>
+                <a href="{{pathFor route='comment_page' _id=_id}}" class="comment-reply">
+                  <span>Reply</span>
+                  <i class="zmdi zmdi-mail-reply-all"></i>
+                </a>
+              </div>
+              <div class="right">
+                <span class="comment-time">{{timeAgo ago}}</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      {{/if}}
+      {{#if showChildComments}}
+        <ul class="comment-children comment-list">
+        {{#each childComments}}
+          {{#with this}}
+            {{> comment_item}}
+          {{/with}}
+        {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </li>
+</template>

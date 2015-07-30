@@ -1,0 +1,15 @@
+<template name="post_page_meta">
+
+  <div class="page-meta">
+    <div class="row">
+      <div class="col s8">
+        <h6 style="display:inline-block;"><a href="/"><i class="zmdi zmdi-close"></i></a> {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}</h6>
+      </div>
+
+      <div class="col s4 align-right">
+        {{> post_share}}
+      </div>
+    </div>
+  </div>
+
+</template>

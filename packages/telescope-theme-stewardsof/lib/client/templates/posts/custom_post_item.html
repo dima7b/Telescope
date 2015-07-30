@@ -1,0 +1,8 @@
+<template name="custom_post_item">
+  <div class="post {{#if sticky}}sticky{{/if}} {{postClass}}" id="{{_id}}">
+    <a class="this" href="/posts/{{_id}}"></a>
+    <div class="row">
+      {{> modules zone="postComponents" moduleClass="post-module col"}}
+    </div>
+  </div>
+</template>

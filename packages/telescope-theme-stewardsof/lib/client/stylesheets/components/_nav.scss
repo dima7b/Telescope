@@ -1,0 +1,60 @@
+nav {
+  height: 90px;
+  padding-top: 15px;
+  .brand-logo {
+    img {
+      width: 100%;
+      max-width: 54px;
+      height: auto;
+    }
+
+    svg {
+      @media(max-width: 991px) {
+        position: relative;
+        left: 10px;
+      }
+    }
+  }
+
+  .search {
+    #search {
+      color: #FFF;
+      border-bottom: 2px solid #FFF;
+      border-radius: 0px;
+      background-color: transparent;
+    }
+
+    &.empty {
+      #search { max-width: 60px; }
+    }
+  }
+
+  ul {
+    li {
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.menu-dropdown.menu-has-items {
+        &:hover {
+          .menu-menu {
+            top: 20px;
+            .menu-contents {
+              display: inline-block;
+
+              li {
+                a {
+                  .menu-label { font-weight: bold; }
+                  span { line-height: 1; }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    > li { padding-right: 10px; }
+  }
+}
