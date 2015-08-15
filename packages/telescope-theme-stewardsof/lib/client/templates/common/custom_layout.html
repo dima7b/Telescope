@@ -2,21 +2,20 @@
   {{> css}}
   {{> custom_submit_button}}
 
-
-
   <div class="outer-wrapper {{currentPage}} {{navLayout}}">
-    <div class="inner-wrapper template-{{pageName}}">
-      {{> nav}}
+    <div class="inner-wrapper template-{{pageName}} template-page-{{title}}">
+      {{> header}}
       <div class="content-wrapper container">
         {{> messages}}
-        {{> modules "hero"}}
         {{> yield "adminMenu"}}
-        {{> yield "postsListTop"}}
+        {{> modules zone="top" wrapperClass="top"}}
         {{> yield}}
-        {{> footer}}
+        {{> modules zone="footer" wrapperClass="footer"}}
       </div>
       <div class="overlay hidden"></div>
     </div>
     {{{extraCode}}}
   </div>
 </template>
+
+

@@ -13,7 +13,6 @@ AutoForm.hooks({
         var post = doc;
 
         this.template.$('button[type=submit]').addClass('loading');
-        this.template.$('#post-thanks').addClass('shown');
 
         // ------------------------------ Checks ------------------------------ //
 
@@ -33,7 +32,6 @@ AutoForm.hooks({
 
     onSuccess: function(operation, post) {
       this.template.$('button[type=submit]').removeClass('loading');
-      this.template.$('#post-thanks').addClass('shown');
       Events.track("new post", {'postId': post._id});
       // Router.go('post_page', post);
     },

@@ -22,6 +22,10 @@
     background-color: #FFF;
   }
 
+  .form-group {
+    // .controls { float: left; }
+  }
+
 }
 
 .af-defaultFieldGroup {
@@ -38,3 +42,24 @@
 }
 
 .users-dashboard-heading { display: inline-block; }
+
+.template-admin_wrapper .users-dashboard {
+  background-color: #FFF;
+  box-shadow: 0 2px 7px -3px #000;
+  font-size: 13px;
+
+  table.striped > tbody > tr > td {
+    padding: 15px;
+
+    .date { padding-bottom: 6px; }
+  }
+
+  .reactive-table-navigation {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  input { height: 2rem; }
+
+  label { height: inherit; }
+}

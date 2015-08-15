@@ -1,0 +1,35 @@
+<template name="custom_comments_list_compact">
+<div class="posts">
+  {{#each commentsCursor}}
+    <div class="post">
+      <a class="this" href="{{pathFor route='post_page' _id=postId}}/"></a>
+      <div class="row">
+        <div class="post-vote post-module col s2 m1">
+          {{> custom_post_vote}}
+        </div>
+
+        <div class="post-content post-module col s7 m8 l9">
+          <h5><a href="{{postLink}}" class="post-title hey" target="{{postTarget}}">{{postTitle}}</a></h5>
+          <h6>{{{htmlBody}}}</h6>
+        </div>
+
+        <div class="post-discuss post-module col s3 m2 l1">
+          {{> custom_post_discuss}}
+        </div>
+
+        <div class="post-avatars post-module col m1 hide-on-small-only">
+          {{> custom_post_avatars}}
+        </div>
+      </div>
+    </div>
+    <!-- <tr>
+      <td><a href="{{pathFor route='post_page' _id=postId}}/">{{postTitle}}</a></td>
+      <td>{{{htmlBody}}}</td>
+      <td>{{fieldValue}}</td>
+    </tr> -->
+  {{/each}}
+</div>
+{{#if hasMoreComments}}
+  <a class="more-button grid-module" href="#"><span>{{_ "load_more"}}</span></a>
+{{/if}}
+</template>

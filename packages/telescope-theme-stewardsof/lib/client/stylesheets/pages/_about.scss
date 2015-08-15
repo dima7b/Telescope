@@ -1,0 +1,186 @@
+.page-about { background-color: #FFF; }
+
+.template-aboutTemplate {
+	> .content-wrapper {
+	  display: inline-block;
+	  padding: 0px !important;
+	  max-width: 100% !important;	
+	  width: 100%;	
+	  overflow-x: hidden;
+	}
+
+	.box {
+  	padding-top: 25px;
+  	padding-right: 30px;
+  	padding-bottom: 25px;
+  	padding-left: 30px;
+
+  	@media(min-width: $screen-sm-min) {
+  		padding-top: 65px;
+  		padding-right: 90px;
+  		padding-bottom: 65px;
+  		padding-left: 90px;
+  	}
+
+  	&:first-child { padding-top: 0px; }
+
+		&.header-box,
+		&.team-box {
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+			@media(min-width: $screen-sm-min) {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+		}
+
+  	&.green {
+			color: #FFF;
+			background-color: #4caf50;
+
+			&:hover { background-color: #00bcd4}
+		}
+
+		&.blue {
+			color: #FFF;
+			background-color: #00bcd4;
+		}
+
+		.box-wrapper {
+			padding-right: 15px;
+			padding-left: 15px;
+
+			@media(min-width: $screen-sm-min) {
+				padding-right: 40px;
+				padding-left: 40px;
+			}
+		}
+
+		h2,
+		h3 { font-weight: normal; }
+
+  	h2 { 
+  		margin-top: 0px;
+  		margin-bottom: 0px;
+  		@media(max-width: $screen-xs-max) { font-size: 15px; }
+
+  		a, a:hover { color: #FFF; font-weight: normal; }
+
+  		&.arrow {
+  			&:after {
+				  position: absolute;
+				  top: 0px;
+				  right: 14px;  				
+					content: ">";
+					float: right;
+					font-size: 1.75em;
+					margin: 0px;
+					line-height: 0.75;	
+					@media(min-width: $screen-sm-min) { right: 28px; }									
+  			}
+  		}
+
+  		&:hover {
+  			&.arrow {
+  				&:after { margin-right: -2px; }
+  			}
+  		}
+  	}
+
+  	h3 { 
+  		margin-top: 0px;
+  		line-height: 1.75; 
+  		@media(max-width: $screen-xs-max) { font-size: 15px; }
+  	}
+	}
+
+	.team-member {
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;		
+		padding-left: 72px;
+
+		@media(max-width: $screen-xs-max) {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		@media(min-width: $screen-sm-min) {}
+
+		&:first-child { 
+			padding-top: 35px; 
+			@media(min-width: $screen-sm-min) { padding-top: 70px; }
+		}
+
+		.blue { 
+			color: #008ea3; 
+			.avatar { border-color: #008ea3; }
+			path { fill: #008ea3 !important; }
+		}
+		
+		.red { 
+			color: #e8818d; 
+			.avatar { border-color: #e8818d; }
+			path { fill: #e8818d !important; }
+		}	
+
+		.yellow { 
+			color: #fad391; 
+			.avatar { border-color: #fad391; }
+			path { fill: #fad391 !important; }
+		}
+
+		.teal { 
+			color: #a8f1e1; 
+			.avatar { border-color: #a8f1e1; }
+			path { fill: #a8f1e1 !important; }
+		}
+
+		.avatar {
+			width: 50px;
+			height: 50px;
+			border: 1px solid;
+			border-radius: 50px;
+
+			@media(min-width: $screen-sm-min) {
+				width: 100px;
+				height: 100px;				
+			}
+
+			img {
+				border-radius: 50px;
+ 				width: 100%;
+			}
+		}
+
+		.name { 
+		  margin-bottom: 5px;
+		  font-size: 0.9em;		  
+		  margin-top: 0px;
+
+		  @media(min-width: $screen-sm-min) { 
+		  	margin-top: 10px; 
+		  	font-size: 1.2em;
+		  }
+		}
+
+		.role {
+			font-size: 0.85em;			
+			font-weight: bold;
+			text-transform: uppercase;
+
+			@media(min-width: $screen-sm-min) { font-size: 1em; }
+		}
+
+		.logo {
+			width: 100%;
+			padding: 0px;
+			max-width: 140px;
+			position: relative;
+			top: -10px;
+			@media(min-width: $screen-sm-min) { top: -30px;	}
+		}
+
+	}
+}

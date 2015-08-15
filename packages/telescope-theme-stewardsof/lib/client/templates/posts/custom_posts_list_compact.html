@@ -1,0 +1,41 @@
+<!--
+
+Post List Compact Component
+
+title (String)
+| The title of the post list
+
+incoming (Cursor)
+| A cursor containing the new posts since render
+
+postsCursor (Cursor)
+| A cursor containing the post list
+
+postsCount (Number)
+| How many posts are loaded
+
+postsReady (Boolean)
+| Whether the subscription is ready
+
+hasMorePosts (Boolean)
+| Whether there are still more posts that can be loaded
+
+loadMoreHandler (Function)
+| What to do when the user clicks "load more"
+
+postsField (Object)
+| An object cont
+
+-->
+
+<template name="custom_posts_list_compact">
+  <div class="posts">
+  {{#each postsCursor}}
+    {{> custom_post_item}}
+  {{/each}}
+  </div>
+{{#if hasMorePosts}}
+  <a class="downvoted-more more-button grid-module" href="#"><span>{{_ "load_more"}}</span></a>
+{{/if}}
+
+</template>

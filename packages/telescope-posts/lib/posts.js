@@ -60,15 +60,15 @@ Posts.schema = new SimpleSchema({
   /**
     Post body (markdown)
   */
-  body: {
-    type: String,
-    optional: true,
-    max: 3000,
-    editableBy: ["member", "admin"],
-    autoform: {
-      rows: 5
-    }
-  },
+  // body: {
+  //   type: String,
+  //   optional: true,
+  //   max: 3000,
+  //   editableBy: ["member", "admin"],
+  //   autoform: {
+  //     rows: 5
+  //   }
+  // },
   /**
     HTML version of the post body
   */
@@ -204,7 +204,7 @@ Posts.schema = new SimpleSchema({
     optional: true
   },
   /**
-    The post author's `_id`. 
+    The post author's `_id`.
   */
   userId: {
     type: String,

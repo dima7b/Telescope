@@ -17,7 +17,6 @@ telescope:daily # singleday
 telescope:datetimepicker
 telescope:debug
 telescope:email
-telescope:embedly
 telescope:getting-started
 telescope:invites
 telescope:kadira
@@ -34,11 +33,12 @@ telescope:singleday
 # telescope:sitemap
 telescope:subscribe-to-posts # notifications
 telescope:tagline-banner
-telescope:tags
-telescope:theme-base
-telescope:theme-hubble
 telescope:update-prompt
 
 ############ Your Custom Packages ############
 
 # my-custom-package
+materialize:materialize
+ixdi:material-design-iconic-font
+telescope:theme-stewardsof
+london:body-class

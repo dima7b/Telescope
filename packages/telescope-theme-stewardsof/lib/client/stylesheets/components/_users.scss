@@ -42,10 +42,12 @@
   .tabs {
     .tab {
       a {
-        color: #0097a7;
+        color: #9dd6da;
         text-transform: capitalize;
         font-size: 24px;
         font-weight: bold;
+
+        &.active { color: #0097a7; }
       }
     }
 
@@ -57,7 +59,7 @@
 }
 
 .tab-module {
-  padding: 20px;
+  padding: 0px;
   background-color: #FFF;
   box-shadow: 0 2px 7px -3px #000;
 }

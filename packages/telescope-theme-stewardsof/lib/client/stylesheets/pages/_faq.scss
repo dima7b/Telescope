@@ -1,0 +1,33 @@
+.template-page {
+
+	> .content-wrapper {
+	  width: 100%;
+	  max-width: 100% !important;
+
+		a {
+			color: #00bcd4;
+			&:hover { color: #0097A7; }
+		}
+
+		h2, h3 { font-weight: normal; }
+
+		h2 { @media(max-width: $screen-xs-max) { font-size: 20px; }}
+		h3 {
+			color: #727272;
+			@media(max-width: $screen-xs-max) { font-size: 14px; }
+
+			&.faq-title {
+				margin-top: 35px;
+				color: #000;
+			}
+		}
+
+		ul {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 40px;
+			list-style-type: disc;
+		}
+
+	}
+}

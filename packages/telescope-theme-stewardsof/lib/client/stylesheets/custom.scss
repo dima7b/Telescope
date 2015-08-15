@@ -2,6 +2,7 @@
 @import "components/posts.scss";
 @import "components/users.scss";
 @import "components/admin.scss";
+@import "components/pages.scss";
 
 body {
   -webkit-text-size-adjust: 100%;
@@ -10,15 +11,37 @@ body {
 
 a { color: #212121; }
 
+// .hidden {
+//   display: none !important;
+//   visibility: hidden !important;
+// }
+
+.visible {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+
+button.btn-primary {
+  background-color: #26a69a;
+}
+
+.btn:hover, .btn-large:hover { color: #FFF; }
+
 .custom-hero-banner{
   text-align: center;
   color: purple;
 }
 
-.container { max-width: 846px; }
+.container {
+  max-width: 846px;
+
+  @media(max-width: 600px) { width: 100%; }
+}
 
 .content-wrapper {
-  margin-top: 50px;
+  margin-top: 35px;
+  @media(min-width: 601px) { margin-top: 50px; }
 }
 
 #submit {
@@ -130,9 +153,19 @@ label {
   }
 }
 
+.modal-trigger {
+  z-index: 1004 !important;
+}
+
 .modal {
   max-width: 360px;
   background-color: transparent;
+
+  @media(max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+    top: 0px !important;
+  }
 
   &#modal-submit,
   &#modal-invite {
@@ -141,7 +174,7 @@ label {
     @media(min-width: 601px) {
       right: 80px;
       bottom: 100px;
-      position: absolute !important;
+      position: fixed !important;
       top: inherit !important;
       left: inherit !important;
     }
@@ -211,3 +244,6 @@ label {
 }
 
 .lean-overlay {}
+.input-field label { font-size: 1.1rem; }
+
+.fixed-action-btn.hide-on-large-only {}

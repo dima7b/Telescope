@@ -30,7 +30,7 @@
             <div class="comment-actions comment-vote {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
               <div class="left">
                 <a class="upvote" href="#">
-                  <span>Give</span>
+                  <span>{{#if upvoted}}{{upvotes}}{{else}}Give{{/if}}</span>
                   <i class="zmdi zmdi-thumb-up"></i>
                 </a>
                 <a href="{{pathFor route='comment_page' _id=_id}}" class="comment-reply">

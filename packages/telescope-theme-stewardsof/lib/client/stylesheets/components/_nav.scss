@@ -2,6 +2,14 @@ nav {
   height: 90px;
   padding-top: 15px;
   .brand-logo {
+    @media only screen and (max-width: 992px) {
+      // left: 35%;
+      position: relative;
+      display: inline-block;
+      max-width: 80px;
+      left: 50px;
+    }
+
     img {
       width: 100%;
       max-width: 54px;
@@ -17,20 +25,75 @@ nav {
   }
 
   .search {
-    #search {
-      color: #FFF;
-      border-bottom: 2px solid #FFF;
-      border-radius: 0px;
+    // width: 25px;
+    // line-height: 1;
+    // height: 35px;
+    // position: relative;
+    // top: -10px;
+
+    @media only screen and (max-width: 600px) {
+      width: 30px;
+      // top: 15px;
+    }
+
+    &.active {
+      border-bottom: 2px solid white;
       background-color: transparent;
     }
 
+    .zmdi {
+      // line-height: 1;
+      display: inline-block;
+      @media only screen and (max-width: 600px) { line-height: 2; }
+
+      &.search-has-it { color: #FFF; }
+      &.zmdi-search { float: left; }
+      &.zmdi-close {
+        color: #FFF;
+        display: none;
+        float: right;
+      }
+    }
+
+    #search {
+      width: 0px;
+      color: #FFF;
+      border-radius: 0px;
+      display: none;
+      background-color: transparent;
+      height: 21px;
+
+    }
+
+    input[type=search]:focus:not([readonly]) {
+      border-width: 0px;
+      box-shadow: 0px 0px 0px #26a69a;
+    }
+
+     &.has-it {
+      width: 220px;
+      padding-left: 6px;
+      @media only screen and (max-width: 991px) { width: 190px; }
+
+      #search { width: 120px; }
+     }
+
     &.empty {
-      #search { max-width: 60px; }
+      // #search { max-width: 60px; }
     }
   }
 
   ul {
+    @media only screen and (max-width: 600px) { padding-right: 6px; }
+    .zone-wrapper { display: inline-block; }
+
     li {
+      padding-right: 0px;
+      padding-left: 15px;
+
+      .menu-top-level,
+      .zmdi { color: #0097a7; }
+
       &:hover {
         background-color: transparent;
       }
@@ -38,9 +101,10 @@ nav {
       &.menu-dropdown.menu-has-items {
         &:hover {
           .menu-menu {
-            top: 20px;
+            top: 40px;
             .menu-contents {
               display: inline-block;
+              border-radius: 0px;
 
               li {
                 a {
@@ -51,10 +115,115 @@ nav {
             }
           }
         }
+
+        .menu-top-level {
+           &:after { display: none; }
+        }
+      }
+
+      &.notifications-menu {
+        font-size: 26px;
+        &.menu-no-items { color: #0097a7; }
+
+        .menu-top-level {
+          &:before,
+          &:after {
+            font-family: 'Material-Design-Iconic-Font';
+            color: #0097a7;
+          }
+
+          &:before { content: '\f1d6'; }
+          // &:after { display: none; }
+        }
+
+        &.menu-has-items {
+          .menu-top-level {
+            &:before { color: #FFF; }
+            &:after {
+              color: #FFF;
+              content: '\f2f9';
+              top: -3px;
+              font-size: 15px;
+              display: none;
+            }
+          }
+        }
+
+        .menu-contents {
+          width: 392px;
+          position: relative;
+          left: -370px;
+
+          .dropdown-item:first-child {
+            padding-right: 0px;
+            padding-left: 0px;
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .menu-menu {
+          .mark-as-read {
+            color: #0097a7;
+            text-transform: uppercase;
+            font-size: 16px;
+            background-color: transparent;
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            padding-right: 0px;
+            padding-left: 0px;
+          }
+        }
       }
 
     }
 
-    > li { padding-right: 10px; }
+    > li {
+      padding-right: 10px;
+    }
+
+    li {
+      &.user-menu { padding-left: 30px; }
+
+      > a {
+        color: #0097a7;
+
+        &.account-link { padding-right: 20px; }
+      }
+    }
+  }
+}
+
+
+.notification-item {
+  line-height: 1;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+  width: 100%;
+
+  &:last-child { border-width: 0px; }
+
+  .notification-timestamp {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    display: block;
+    padding-top: 5px;
+  }
+
+  .notification-html {
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      a {
+        display: inline-block;
+        line-height: 1;
+        padding: 0;
+      }
+    }
   }
 }

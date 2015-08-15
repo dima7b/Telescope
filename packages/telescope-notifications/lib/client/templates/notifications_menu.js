@@ -38,6 +38,7 @@ Template.notifications_menu.helpers({
       menuItems = [];
     }
     return menuItems;
+
   },
   menuMode: function () {
     if (!!this.mobile) {

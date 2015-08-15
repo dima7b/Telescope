@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteorspark:util/lib/util-server.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,qE;AACA,0B","file":"/packages/meteorspark_util.js","sourcesContent":["// https://github.com/isaacs/inherits/blob/master/inherits_browser.js\nUtil = Npm.require(\"util\")\n"]}

@@ -2,9 +2,8 @@
   {{#if isLoggedIn}}
     {{> menuComponent menuName="user" menuLabel=menuLabel menuItems=menuItems menuMode=menuMode menuCollapsed=true menuClass=moduleClass}}
   {{else}}
-    <div class="signin-signup {{moduleClass}}">
-      <a class="account-link sign-in" href="{{pathFor route='atSignUp'}}">{{_ "sign_up"}}</a>
+    <li class="signin-signup {{moduleClass}}">
       <a class="account-link sign-up" href="{{pathFor route='atSignIn'}}">{{_ "sign_in"}}</a>
-    </div>
+    </li>
   {{/if}}
 </template>

@@ -1,0 +1,19 @@
+<template name="custom_post_admin">
+  {{#if isAdmin}}
+  <div class="post-meta-item post-admin" aria-live="off">
+
+    {{#if canEdit this}}
+      <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit"><i class="zmdi zmdi-edit"></i></a>
+    {{/if}}
+
+    {{#if showApprove}}
+      <a href="#" class="approve-link goto-edit"><i class="zmdi zmdi-power"></i></a>
+    {{/if}}
+
+    {{#if showUnapprove}}
+      <a href="#" class="unapprove-link goto-edit"><i class="zmdi zmdi-power"></i></a>
+    {{/if}}
+
+  </div>
+  {{/if}}
+</template>

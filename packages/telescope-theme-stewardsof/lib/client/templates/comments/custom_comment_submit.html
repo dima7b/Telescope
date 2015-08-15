@@ -1,6 +1,7 @@
 <template name="custom_comment_submit">
   {{#if canComment}}
     <div class="comment-form comment-new module">
+      <h6 class="comment-form-title">Community Engagement</h6>
       <div class="participants">
         <h6 class="points {{#if upvoted}}voted{{/if}} text-center">{{baseScore}} Thumbs Up</h6>
         {{#if commenters}}
@@ -18,6 +19,9 @@
       <span class="action-count">{{commentCount}} Comments</span>
     </div>
   {{else}}
+    <div class="comment-form comment-new module">
+      <h6 class="comment-form-title">Community Engagement</h6>
+    </div>
     <p class="cannot-comment-message">{{reason}}</p>
   {{/if}}
 </template>

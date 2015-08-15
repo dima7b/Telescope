@@ -1,0 +1,371 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "02cc5dff7a557691b201d1fe2d9cf821eb685abd.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/02cc5dff7a557691b201d1fe2d9cf821eb685abd.js",
+      "size": 1558778,
+      "hash": "02cc5dff7a557691b201d1fe2d9cf821eb685abd"
+    },
+    {
+      "path": "5ba6c4f64a353f3e81f7df39bbfc013e0e7fadf5.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/5ba6c4f64a353f3e81f7df39bbfc013e0e7fadf5.css?meteor_css_resource=true",
+      "size": 282028,
+      "hash": "5ba6c4f64a353f3e81f7df39bbfc013e0e7fadf5"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
+      "size": 60767,
+      "hash": "3e63fc9b3de4580f1f3bec0631436f755b80f167"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.svg",
+      "size": 313398,
+      "hash": "26bb1c5ef100a1cd71923f1d5dc29fc797ef4639"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.ttf",
+      "size": 122092,
+      "hash": "9088143b19979779b2116cef38b661f72d982e19"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.woff",
+      "size": 71508,
+      "hash": "56ce13e71c2150d81bc972940584915181bd6081"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.woff2",
+      "size": 56780,
+      "hash": "1075231650f579955905bb2f6527148a8e2b4b16"
+    },
+    {
+      "path": "packages/utilities_avatar/default.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/utilities_avatar/default.png",
+      "size": 1577,
+      "hash": "76ec76887e4c748e6358a2aaf9b57006567f8999"
+    },
+    {
+      "path": "packages/telescope_core/public/img/default-avatar.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_core/public/img/default-avatar.png",
+      "size": 4377,
+      "hash": "ea0eb98f33480ab75ff9396c227d0e06e4b7b4ef"
+    },
+    {
+      "path": "packages/telescope_core/public/img/loading-balls.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_core/public/img/loading-balls.svg",
+      "size": 1377,
+      "hash": "4b68d0ee62f67916570ba998319f6b66e5ce83de"
+    },
+    {
+      "path": "packages/telescope_core/public/img/loading.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_core/public/img/loading.svg",
+      "size": 1639,
+      "hash": "e209c32ad50816f31ab8d63bb7a4c21971ebea02"
+    },
+    {
+      "path": "packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.eot",
+      "size": 20335,
+      "hash": "f3a9a3b609133c3d21d6b42abbf7f43bd111df72"
+    },
+    {
+      "path": "packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.svg",
+      "size": 62926,
+      "hash": "66b1fc67e37d01ee45ca75c4eefb144d2dbe98fa"
+    },
+    {
+      "path": "packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.ttf",
+      "size": 41280,
+      "hash": "aafafdc09404c4aa4447d7e898a2183def9cc1b1"
+    },
+    {
+      "path": "packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_datetimepicker/fonts/glyphicons-halflings-regular.woff",
+      "size": 23320,
+      "hash": "22037a3455914e5662fa51a596677bdb329e2c5c"
+    },
+    {
+      "path": "packages/telescope_getting-started/content/images/stackoverflow.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_getting-started/content/images/stackoverflow.png",
+      "size": 4603,
+      "hash": "603d20c54eb5de67702314d66e95da0a4c7cf08c"
+    },
+    {
+      "path": "packages/telescope_getting-started/content/images/telescope.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/telescope_getting-started/content/images/telescope.png",
+      "size": 26004,
+      "hash": "d8b5220a929413bd8dd37226b9f3efa05a813b23"
+    },
+    {
+      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.eot",
+      "size": 102112,
+      "hash": "fc1bc1337f3313ead42b22a67a142d4e0d356b3a"
+    },
+    {
+      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.svg",
+      "size": 330095,
+      "hash": "757d54367f0df16a783769eec0ba974f42bd7dce"
+    },
+    {
+      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.ttf",
+      "size": 101892,
+      "hash": "2cb66ac73a2d32ae8d2f807f705eff26fcf93323"
+    },
+    {
+      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff",
+      "size": 101968,
+      "hash": "ee77184556f7b66fcb8ee9496f81ac62f792d7dc"
+    },
+    {
+      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff2",
+      "size": 33220,
+      "hash": "2355cb4f824d070bc42c4ce6b97cab71af1f4ca2"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.ttf",
+      "size": 127744,
+      "hash": "47327df0f35e7cd7c8645874897a7449697544ae"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.woff",
+      "size": 62876,
+      "hash": "ee99cd87a59a9a5d4092c83232bb3eec67547425"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.woff2",
+      "size": 49976,
+      "hash": "933b866d09c2b087707a98dab64b3888865eeb96"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.ttf",
+      "size": 126792,
+      "hash": "e321c183e2b75ee19813892b7bac8d7c411cb88a"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.woff",
+      "size": 62316,
+      "hash": "6300f659be9e834ab263efe2fb3c581d48b1e7b2"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.woff2",
+      "size": 49380,
+      "hash": "bbdc28b887400fcb340b504ec2904993af42a5d7"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.ttf",
+      "size": 127488,
+      "hash": "6060ca726b9760b76f7c347dce9d2fa1fe42ec92"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.woff",
+      "size": 62980,
+      "hash": "d45f84922131364989ad6578c7a06b6b4fc22c34"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.woff2",
+      "size": 50224,
+      "hash": "6cc1b73571af9e827c4e7e91418f476703cd4c4b"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.ttf",
+      "size": 126072,
+      "hash": "824b5480c977a8166e177e5357d13164ccc45f47"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.woff",
+      "size": 61736,
+      "hash": "74734dde8d94e7268170f9b994dedfbdcb5b3a15"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.woff2",
+      "size": 49236,
+      "hash": "ed1558b0541f5e01ce48c7db1588371b990eec19"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.ttf",
+      "size": 127584,
+      "hash": "173ed64528b4d010a76d8d38deb1d7e7eed58eda"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.woff",
+      "size": 61628,
+      "hash": "fbc3e71d456c96667d8082ab910e3946ef89240b"
+    },
+    {
+      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.woff2",
+      "size": 48524,
+      "hash": "2449e3dac5ddb7c3da8bb07450493b62d052758c"
+    },
+    {
+      "path": "packages/ixdi_material-design-iconic-font/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ixdi_material-design-iconic-font/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff",
+      "size": 104000,
+      "hash": "5d881fbec02c6237bc9a8ace4c1be221c6382344"
+    },
+    {
+      "path": "packages/ixdi_material-design-iconic-font/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ixdi_material-design-iconic-font/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.ttf",
+      "size": 103952,
+      "hash": "54ee1921e48acef55a651b3d673bda02ec4a8a0f"
+    },
+    {
+      "path": "app/img/logo.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/logo.svg",
+      "size": 4362,
+      "hash": "7824a85cce83eb64a37ee39123d3748b0b79eb3e"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "e13a9d568d2ad297627ad17aeebf6532553187ff"
+    }
+  ]
+}

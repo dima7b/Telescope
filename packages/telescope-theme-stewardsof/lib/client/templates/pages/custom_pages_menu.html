@@ -1,0 +1,14 @@
+<template name="custom_pages_menu">
+  {{#if hasPages}}
+    <li class="menu pages-menu menu-dropdown menu-collapsed menu-show-more menu-has-items">
+      <div class="menu-top-level" href="/"><i class="zmdi zmdi-more"></i></div>
+      <div class="menu-menu">
+        <ul class="menu-contents" role="menu" aria-labelledby="dLabel">
+        {{#each pages}}
+          <li class="menu-items"><a href="{{pathFor route='page'}}">{{title}}</a></li>
+        {{/each}}
+        </ul>
+      </div>
+    </li>
+  {{/if}}
+</template>

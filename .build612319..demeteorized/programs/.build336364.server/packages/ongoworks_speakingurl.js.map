@@ -1,0 +1,1 @@
+{"version":3,"sources":["ongoworks:speakingurl/speakingurl.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,qC","file":"/packages/ongoworks_speakingurl.js","sourcesContent":["getSlug = Npm.require('speakingurl');\n"]}
