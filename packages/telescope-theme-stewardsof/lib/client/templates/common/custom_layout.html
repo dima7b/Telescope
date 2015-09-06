@@ -1,8 +1,7 @@
 <template name="custom_layout">
   {{> css}}
-  {{> custom_submit_button}}
 
-  <div class="outer-wrapper {{currentPage}} {{navLayout}}">
+  <div class="outer-wrapper {{currentPage}} {{navLayout}} {{#if currentUser}}logged-in{{else}}logged-out{{/if}}">
     <div class="inner-wrapper template-{{pageName}} template-page-{{title}}">
       {{> header}}
       <div class="content-wrapper container">
@@ -15,6 +14,7 @@
       <div class="overlay hidden"></div>
     </div>
     {{{extraCode}}}
+    {{> custom_submit_button}}
   </div>
 </template>
 

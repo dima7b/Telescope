@@ -10,6 +10,12 @@
     .avatar {
       width: 135px;
       height: 135px;
+
+      @media(max-width: 600px) {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+      }
     }
   }
 
@@ -22,8 +28,10 @@
   .user-info {
     padding-top: 20px;
     color: #727272;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    // font-weight: bold;
+
+    @media(max-width: 600px) { font-size: 15px; }
 
     span {
       margin-bottom: 15px;
@@ -46,6 +54,8 @@
         text-transform: capitalize;
         font-size: 24px;
         font-weight: bold;
+
+        @media(max-width: 600px) { font-size: 15px; }
 
         &.active { color: #0097a7; }
       }
@@ -72,6 +82,8 @@
 
     .at-title {
       text-align: center;
+
+      h3 { font-size: 22px; }
     }
 
     h3 { margin-top: 0px; }

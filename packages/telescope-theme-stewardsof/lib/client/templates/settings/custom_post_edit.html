@@ -1,0 +1,11 @@
+<template name="custom_post_edit">
+  <div class="form-page post-edit">
+    <div class="grid grid-module">
+      {{> quickForm collection="Posts" doc=post id="editPostForm" template="materialize" type="method-update" meteormethod="editPost" fields=postFields}}
+      <a class="btn waves red delete-link" href="/" style="width: 100%;">{{_ "delete_post"}}</a>
+    </div>
+    <div class="grid grid-module">
+
+    </div>
+  </div>
+</template>

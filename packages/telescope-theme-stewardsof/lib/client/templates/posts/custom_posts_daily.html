@@ -11,6 +11,6 @@
 
       {{> after_day}}
     {{/each}}
-    <a class="load-more-days-button grid-module" href="{{loadMoreDaysUrl}}"><span>{{_ "load_next_days"}}</span></a>
+    {{> load_more_days handler=loadMoreHandler}}
   </div>
 </template>

@@ -7,6 +7,7 @@ Template.custom_menuComponent.replaces("menuComponent");
 Template.custom_menuItem.replaces("menuItem");
 Template.custom_notifications_mark_as_read.replaces("notifications_mark_as_read");
 Template.custom_notification_item.replaces("notification_item");
+Template.custom_user_menu_label.replaces("user_menu_label");
 
 Template.custom_layout.replaces("layout");
 Template.custom_submit_button.replaces("submit_button");
@@ -35,10 +36,18 @@ Template.custom_user_profile_twitter.replaces("user_profile_twitter");
 Template.custom_user_invites.replaces("user_invites");
 Template.custom_user_account.replaces("user_account");
 
+
+Template.custom_settings.replaces("settings");
+Template.custom_post_edit.replaces("post_edit");
+
 Template.custom_pages_menu.replaces("pages_menu");
 Template.custom_page.replaces("page");
+Template.custom_page_item.replaces("page_item");
+Template.custom_pages.replaces("pages");
 
 Telescope.modules.removeAll("mobileNav");
+Telescope.modules.removeAll("footer");
+Telescope.modules.remove("top","posts_views_nav");
 Telescope.modules.remove("postComponents","post_rank");
 Telescope.modules.remove("postComponents","post_actions");
 Telescope.modules.remove("postComponents","post_share");
@@ -46,22 +55,31 @@ Telescope.modules.remove("postComponents","post_avatars");
 Telescope.modules.remove("postHeading","post_domain");
 Telescope.modules.remove("profileDisplay","user_downvoted_posts");
 Telescope.modules.remove("commentThreadBottom","post_subscribe");
-Telescope.modules.remove("secondaryNav","submit_button");
-Telescope.modules.removeAll("primaryNav");
 Telescope.modules.remove("postMeta", "post_info");
 Telescope.modules.remove("postMeta", "post_comments_link");
 Telescope.modules.remove("postMeta", "post_author");
 Telescope.modules.remove("postMeta", "post_admin");
+Telescope.modules.remove("profileEdit", "user_invites");
+Telescope.modules.remove("profileEdit", "user_subscribed_posts");
+Telescope.modules.remove("profileDisplay", "user_comments");
 
-Telescope.modules.add("primaryNav", {
-  template: 'search',
-  order: 10
-});
+// Telescope.modules.removeAll("primaryNav");
+Telescope.modules.remove("primaryNav", "search");
+Telescope.modules.remove("primaryNav", "pages_menu");
+
+Telescope.modules.remove("secondaryNav","submit_button");
+Telescope.modules.remove("secondaryNav", "user_menu");
 
 Telescope.modules.add("postComponents", {
   template: "post_avatars",
   order: 99
 });
+
+Telescope.modules.add("primaryNav", {
+  template: 'posts_menu',
+  order: 5
+});
+
 
 Telescope.modules.add("secondaryNav", {
   template: 'search',
@@ -73,8 +91,13 @@ Telescope.modules.add("secondaryNav", {
   order: 0
 });
 
-Telescope.modules.remove("primaryNav", "search");
-Telescope.modules.remove("primaryNav", "pages_menu");
+
+Telescope.modules.add("secondaryNav", [
+  {
+    template: 'user_menu',
+    order: 40
+  }
+]);
 
 Telescope.menuItems.add("userMenu", [
   {

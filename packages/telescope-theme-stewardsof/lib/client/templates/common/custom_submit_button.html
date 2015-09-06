@@ -1,9 +1,10 @@
 <template name="custom_submit_button">
 
 
+  <!-- Desktop -->
   <div id="btn-submit" class="fixed-action-btn hide-on-small-only" style="bottom: 45px; right: 24px;">
     {{#if canPost}}
-    <a class="btn-floating btn-large pink modal-trigger tooltipped" data-target="modal-submit" data-position="left" data-delay="50" data-tooltip="Post a changemaker">
+    <a class="btn-floating btn-large pink modal-trigger tooltipped" href="#modal-submit" data-position="left" data-delay="50" data-tooltip="Post a changemaker">
       <i class="zmdi zmdi-plus"></i>
       <i class="zmdi zmdi-edit"></i>
     </a>
@@ -16,7 +17,7 @@
     <ul>
       <li>
         {{#if canPost}}
-        <a class="btn-floating orange modal-trigger tooltipped" data-target="modal-invite" data-position="left" data-delay="50" data-tooltip="Invite to Stewardsof">
+        <a class="btn-floating orange modal-trigger tooltipped" href="#modal-invite" data-position="left" data-delay="50" data-tooltip="Invite to Stewardsof">
           <i class="zmdi zmdi-ticket-star"></i>
         </a>
         {{ else }}
@@ -28,23 +29,31 @@
     </ul>
   </div>
 
-  <div class="fixed-action-btn hide-on-large-only" style="bottom: 45px; right: 24px;">
+  <!-- Mobile -->
+  <div class="fixed-action-btn hide-on-large-only active-btn" style="bottom: 45px; right: 24px; z-index: 1003;">
     <a class="btn-floating btn-large pink dummy-btn">
       <i class="zmdi zmdi-plus"></i>
     </a>
-    {{#if canPost}}
-    <a class="btn-floating btn-large pink modal-trigger action-btn hidden" data-target="modal-submit">
+    <span class="mobile-fab-tip tooltip-post">Post a changemaker</span>
+    <a class="btn-floating btn-large pink modal-trigger action-btn hidden" href="#modal-submit">
       <i class="zmdi zmdi-edit"></i>
     </a>
     <ul>
       <li>
-        <a class="btn-floating orange modal-trigger" data-target="modal-invite">
+        <span class="mobile-fab-tip tooltip-invite">Invite to Stewardsof</span>
+        <a class="btn-floating orange modal-trigger" href="#modal-invite">
           <i class="zmdi zmdi-ticket-star"></i>
         </a>
       </li>
     </ul>
-    {{/if}}
   </div>
+
+  <div class="fixed-action-btn hide-on-large-only disabled-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large pink" href="{{pathFor route='atSignIn'}}">
+      <i class="zmdi zmdi-plus"></i>
+    </a>
+  </div>
+
 
   <div id="modal-submit" class="modal z-depth-3">
     <div class="modal-header">
@@ -74,7 +83,6 @@
         <a href="#!" class="modal-action modal-close waves-effect waves-pink btn-flat right">Close</a>
       </div>
     </div>
-
   </div>
 
   <div id="modal-invite" class="modal z-depth-3">

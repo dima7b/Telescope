@@ -5,11 +5,11 @@ Template.user_invites.created = function () {
 
   instance.invites = new ReactiveVar({});
 
-  Meteor.autorun(function () {
-    Telescope.subsManager.subscribe('invites', user._id);
-    var invites = Invites.find({invitingUserId: user._id});
-    instance.invites.set(invites);
-  });
+  // Meteor.autorun(function () {
+  //   Telescope.subsManager.subscribe('invites', user._id);
+  //   var invites = Invites.find({invitingUserId: user._id});
+  //   instance.invites.set(invites);
+  // });
 };
 
 Template.user_invites.helpers({

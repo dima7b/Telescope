@@ -5,6 +5,7 @@
 @import "components/pages.scss";
 
 body {
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -40,7 +41,7 @@ button.btn-primary {
 }
 
 .content-wrapper {
-  margin-top: 35px;
+  // margin-top: 35px;
   @media(min-width: 601px) { margin-top: 50px; }
 }
 
@@ -85,67 +86,6 @@ button.btn-primary {
   border-width: 0px;
 }
 
-// .af-fieldgroup-heading {
-//   padding: 20px;
-// }
-
-label {
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  display: inline-block;
-  height: 25px;
-  line-height: 25px;
-  font-size: 1rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-
-  &:before {
-    // content: '';
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 18px;
-    // height: 18px;
-    // z-index: 0;
-    // border: 2px solid #5a5a5a;
-    // border-radius: 1px;
-    // margin-top: 2px;
-    // -webkit-transition: 0.2s;
-    // -moz-transition: 0.2s;
-    // -o-transition: 0.2s;
-    // -ms-transition: 0.2s;
-    // transition: 0.2s;
-  }
-}
-
-label {
-  padding-left: 0px;
-}
-
-[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-  position: relative;
-  left: 0px;
-  visibility: visible;
-}
-
-// ::-webkit-input-placeholder {
-//    color: red;
-// }
-
-// :-moz-placeholder { /* Firefox 18- */
-//    color: red;
-// }
-
-// ::-moz-placeholder {  /* Firefox 19+ */
-//    color: red;
-// }
-
-// :-ms-input-placeholder {
-//    color: red;
-// }
 
 #btn-submit {
   &:hover {
@@ -153,8 +93,26 @@ label {
   }
 }
 
+.at-btn {
+  // border: 0px;
+  // padding: 15px;
+}
+
+.at-pwd {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+.at-signup-link {
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
 .modal-trigger {
-  z-index: 1004 !important;
+  z-index: 9999 !important;
 }
 
 .modal {
@@ -164,7 +122,8 @@ label {
   @media(max-width: 600px) {
     max-width: 100%;
     width: 100%;
-    top: 0px !important;
+    top: inherit !important;
+    bottom: 0px !important;
   }
 
   &#modal-submit,
@@ -243,7 +202,104 @@ label {
   }
 }
 
-.lean-overlay {}
+.lean-overlay {
+  @media(min-width: 992px) { opacity: 0 !important; }
+}
 .input-field label { font-size: 1.1rem; }
 
+.fixed-action-btn {
+  .hidden {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
 .fixed-action-btn.hide-on-large-only {}
+
+
+form#editPostForm,
+form#updateSettingsForm,
+form#editUserForm, {
+  box-shadow: 0 2px 7px -3px #000;
+  background-color: white;
+  padding: 20px;
+}
+
+.at-form,
+.user-profile,
+#editUserForm,
+#editPostForm {
+  @media(max-width: 600px) { margin-top: 50px; }
+}
+
+#editPostForm {
+  .af-fieldGroup {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.logged-in {
+  .active-btn {
+    display: block;
+    visibility: visible;
+  }
+  .disabled-btn {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.logged-out {
+  .active-btn {
+    display: none;
+    visibility: hidden;
+  }
+  .disabled-btn {
+    display: block;
+    visibility: visible;
+  }
+}
+
+// .logged-in-action {
+//   display: none;
+//   visibility: hidden;
+// }
+
+// .logged-in {
+//   .logged-in-action {
+//     display: block;
+//     visibility: visible;
+//   }
+// }
+
+.mobile-active {
+  // @media(max-width: 991px) {
+  //   display: block;
+  //   left: 10.5px;
+  //   bottom: 54px;
+  //   opacity: 1;
+  //   margin-left: -10px;
+  //   margin-top: 0px;
+
+  //   .backdrop {
+  //     width: 14px; height: 14px; border-radius: 14px 0px 0px 14px; transform-origin: 95% 50% 0px; margin-top: 18px; margin-left: 155px; display: block; opacity: 1; transform: scale(15.5);
+  //   }
+  // }
+}
+
+.mobile-fab-tip {
+  position: fixed;
+  right: 85px;
+  margin-top: 8px;
+  padding: 9px;
+  text-align: right;
+  background-color: #323232;
+  border-radius: 2px;
+  color: #FFF;
+  opacity: 0;
+}
+
+.more-button {
+  width: 100%;
+}

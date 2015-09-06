@@ -14,7 +14,6 @@ telescope:core
 telescope:migrations
 telescope:api
 telescope:daily # singleday
-telescope:datetimepicker
 telescope:debug
 telescope:email
 telescope:getting-started
@@ -42,3 +41,5 @@ materialize:materialize
 ixdi:material-design-iconic-font
 telescope:theme-stewardsof
 london:body-class
+gildaspk:autoform-materialize
+alanning:roles

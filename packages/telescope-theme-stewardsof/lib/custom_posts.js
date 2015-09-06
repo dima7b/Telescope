@@ -26,7 +26,7 @@ Posts.schema = new SimpleSchema({
     editableBy: ["admin"],
     autoform: {
       group: 'admin',
-      type: "bootstrap-datetimepicker"
+      type: "pickadate"
     }
   },
   /**

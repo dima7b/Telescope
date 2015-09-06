@@ -4,6 +4,10 @@
 .no-posts { background-color: #FFF; }
 
 .posts-day-heading {
+  padding-bottom: 15px;
+  font-size: 14px;
+
+  strong { font-size: 17px !important; }
   @media(max-width: 600px) { padding: 10px; }
 }
 
@@ -86,9 +90,20 @@
           margin-top: 0px;
           margin-bottom: 5px;
 
-          @media(max-width: 991px) { font-size: 1.34rem; }
+          @media(max-width: 991px) {
+            padding-top: 5px;
+            font-size: 1.34rem;
+          }
 
           a {
+            font-weight: 400;
+            font-size: 22px;
+
+            @media(max-width: 600px) {
+              font-size: 20px;
+              line-height: 1.25;
+            }
+
             &:hover { color: #0097a7; }
           }
 
@@ -106,7 +121,7 @@
           color: #727272;
           font-size: 1.1rem;
           line-height: 1.5;
-          @media(max-width: 991px) { font-size: 0.9rem; }
+          @media(max-width: 991px) { font-size: 1.05rem; }
         }
       }
 
@@ -156,6 +171,7 @@
 }
 
 .single-post {
+  @media(max-width: 600px) { margin-top: 50px; }
   .posts {
     box-shadow: 0 2px 7px -3px #000;
     background-color: #FFF;
@@ -201,20 +217,25 @@
     top: -2px;
     padding-left: 15px;
     font-size: 18px;
+
   }
 }
 
 .share-options {
-  right: 0px;
-  bottom: -40px;
+  // right: 0px;
+  top: inherit !important;
+  left: inherit;
+  bottom: 0px;
   height: 60px;
   background-color: #FFF;
   display: none;
 
-  @media(max-width: 600px) { top: 175px !important; }
+  @media(max-width: 600px) {
+    // top: 175px !important;
+  }
 
   a {
-    color: #FFF;
+    color: #0097a7;
     text-align: center;
   }
 }
@@ -237,11 +258,19 @@
 
     .post-commenters {
       padding-top: 10px;
+      display: inline-block;
+
       .commenter-avatar {
         display: inline-block;
         .avatar {
           width: 25px;
           height: 25px;
+
+          .avatar-initials {
+            font-size: 14px;
+            line-height: 27px;
+          }
+
         }
       }
     }
@@ -267,16 +296,19 @@
       border-width: 0px;
 
       > .row { margin-bottom: 0px; }
+    }
 
-      .control-label { display: none; }
+    .control-label { display: none; }
 
-      textarea {
-        padding: 15px 175px 15px 15px;
-        height: 5rem !important;
-        border: 0;
-        box-sizing: inherit;
-        background-color: #f4f4f4;
-      }
+    textarea {
+      margin-bottom: 0px;
+      padding: 15px 175px 15px 15px;
+      height: 5rem !important;
+      border: 0;
+      box-sizing: inherit;
+      background-color: #f4f4f4;
+
+      + label { display: none; }
     }
 
     #submitCommentFormButton { display: none; }
@@ -284,7 +316,7 @@
 
     button {
       position: absolute;
-      top: 0px;
+      top: 15px;
       right: 20px;
       margin-top: 20px;
     }
@@ -325,6 +357,11 @@
             .avatar {
               width: 35px;
               height: 35px;
+
+              .avatar-initials {
+                font-size: 19px;
+                line-height: 37px;
+              }
             }
           }
         }
@@ -361,6 +398,9 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 15px;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 0 #FFF;
 
   #submitPostForm {
     .af-defaultFieldGroup {
@@ -393,6 +433,9 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 15px;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 0 #FFF;
 
   #inviteForm {
     .af-defaultFieldGroup {

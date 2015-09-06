@@ -50,6 +50,7 @@ Posts.views.add("search", function (terms, baseParameters) {
       $or: [
         {title: {$regex: terms.query, $options: 'i'}},
         {url: {$regex: terms.query, $options: 'i'}},
+        {customPostField: {$regex: terms.query, $options: 'i'}},
         {body: {$regex: terms.query, $options: 'i'}}
       ]
     }

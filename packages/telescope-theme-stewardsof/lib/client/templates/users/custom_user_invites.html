@@ -1,7 +1,7 @@
 <template name="custom_user_invites">
   <div class="grid-small grid-block dialog admin">
     {{#if canCurrentUserInvite}}
-      {{#autoForm schema=invitesSchema id="inviteForm" class="form-block" type="method" meteormethod="inviteUser"}}
+      {{#autoForm schema=invitesSchema id="inviteForm" class="form-block" type="method" meteormethod="inviteUser" template="materialize"}}
           <div class="row">
             <div class="input-field col s12">
               {{> afFieldInput name="invitedUserEmail"}}

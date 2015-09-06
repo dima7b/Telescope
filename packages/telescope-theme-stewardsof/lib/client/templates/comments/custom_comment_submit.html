@@ -7,15 +7,14 @@
         {{#if commenters}}
         <div class="post-commenters">
         {{#each commenters}}
-          <a href="{{getProfileUrl this}}" class="avatar-link avatar-small commenter-avatar">
+          <a href="{{getProfileUrl this}}" title="{{getDisplayName this}}" class="avatar-link avatar-small commenter-avatar">
             {{> avatar userId=this shape="circle"}}
           </a>
         {{/each}}
         </div>
         {{/if}}
       </div>
-      <!-- <h4 class="comment-new-heading">{{_ "add_comment"}}</h4> -->
-      {{> quickForm collection="Comments" id="submitCommentForm" input-col-class="controls" type="method" meteormethod="submitComment" fields=commentFields parentContext=this}}
+      {{> quickForm collection="Comments" id="submitCommentForm" type="method" meteormethod="submitComment" fields=commentFields parentContext=this template="materialize"}}
       <span class="action-count">{{commentCount}} Comments</span>
     </div>
   {{else}}

@@ -11,7 +11,7 @@ Telescope.schemas.votes = new SimpleSchema({
     optional: true
   },
   votedAt: {
-    type: Date, 
+    type: Date,
     optional: true
   }
 });
@@ -24,14 +24,14 @@ Telescope.schemas.userData = new SimpleSchema({
   /**
     Bio (Markdown version)
   */
-  bio: {
-    type: String,
-    optional: true,
-    editableBy: ["member", "admin"],
-    autoform: {
-      rows: 5
-    }
-  },
+  // bio: {
+  //   type: String,
+  //   optional: true,
+  //   editableBy: ["member", "admin"],
+  //   autoform: {
+  //     rows: 5
+  //   }
+  // },
   /**
     Total comment count
   */
@@ -179,7 +179,7 @@ Telescope.schemas.userData = new SimpleSchema({
  * Users schema
  * @type {SimpleSchema}
  */
-Users.schema = new SimpleSchema({ 
+Users.schema = new SimpleSchema({
   _id: {
     type: String,
     public: true,

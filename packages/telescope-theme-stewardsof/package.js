@@ -35,10 +35,12 @@ Package.onUse(function (api) {
     // 'lib/client/templates/hello.js',
 
     // Nav
+    'lib/client/templates/nav/posts_menu.html',
     'lib/client/templates/nav/custom_header.html',
     'lib/client/templates/nav/custom_logo.html',
     'lib/client/templates/nav/custom_search.html',
     'lib/client/templates/nav/custom_menu_component.html',
+    'lib/client/templates/nav/custom_user_menu_label.html',
     'lib/client/templates/nav/custom_notifications_mark_as_read.html',
     'lib/client/templates/nav/custom_notification_item.html',
     'lib/client/templates/nav/custom_notifications_menu.js',
@@ -75,9 +77,13 @@ Package.onUse(function (api) {
     'lib/client/templates/users/custom_user_invites.html',
     'lib/client/templates/users/custom_user_account.html',
 
-
     'lib/client/templates/pages/custom_pages_menu.html',
     'lib/client/templates/pages/custom_page.html',
+    'lib/client/templates/pages/custom_page_item.html',
+    'lib/client/templates/pages/custom_pages.html',
+
+    'lib/client/templates/settings/custom_settings.html',
+    'lib/client/templates/settings/custom_post_edit.html',
 
     'lib/client/templates/custom_post_title.html',
     'lib/client/templates/custom_post_title.js',

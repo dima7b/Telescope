@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
 
   api.versionsFrom("METEOR@1.0");
-  
+
   var packages = [
     'telescope:lib@0.23.0', //  no dependencies
     'telescope:messages@0.23.0', // lib
@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   ];
 
   api.use(packages);
-  
+
   api.imply(packages);
 
   api.addFiles([

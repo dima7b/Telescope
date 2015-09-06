@@ -38,6 +38,7 @@ Users.addField({
     type: String,
     label: "Role",
     optional: true,
+    profile: true,
     editableBy: ["member", "admin"]
   }
 });
